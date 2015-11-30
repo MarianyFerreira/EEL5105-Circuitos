@@ -1,0 +1,19 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_signed.all;
+
+entity somador is
+	port (creditoAtual: in std_logic_vector(10 downto 0);
+			credito: in std_Logic_vector(10 downto 0);
+			
+			saida: out std_Logic_vector(10 downto 0)
+			);
+			
+	end somador;
+			
+architecture somador_behv of somador is
+	begin
+		
+	saida <= creditoAtual + credito;
+	
+	end somador_behv;

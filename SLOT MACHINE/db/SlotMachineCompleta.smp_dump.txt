@@ -1,0 +1,67 @@
+
+State Machine - |SLOTMACHINE|Sequenciadores_Topo:SEQUENCIADORES|Sequenciadores_FSM_C3:afsm_c3|EA
+Name EA.sF EA.sE EA.sD EA.sC EA.sB EA.sA EA.s9 EA.s8 EA.s7 EA.s6 EA.s5 EA.s4 EA.s3 EA.s2 EA.s1 EA.s0 
+EA.s0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+EA.s1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+EA.s2 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+EA.s3 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+EA.s4 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+EA.s5 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+EA.s6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+EA.s7 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+EA.s8 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+EA.s9 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+EA.sA 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+EA.sB 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+EA.sC 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+EA.sD 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+EA.sE 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+EA.sF 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |SLOTMACHINE|Sequenciadores_Topo:SEQUENCIADORES|Sequenciadores_FSM_C2:afsm_c2|EA
+Name EA.sF EA.sE EA.sD EA.sC EA.sB EA.sA EA.s9 EA.s8 EA.s7 EA.s6 EA.s5 EA.s4 EA.s3 EA.s2 EA.s1 EA.s0 
+EA.s0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+EA.s1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+EA.s2 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+EA.s3 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+EA.s4 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+EA.s5 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+EA.s6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+EA.s7 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+EA.s8 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+EA.s9 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+EA.sA 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+EA.sB 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+EA.sC 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+EA.sD 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+EA.sE 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+EA.sF 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |SLOTMACHINE|Sequenciadores_Topo:SEQUENCIADORES|Sequenciadores_FSM_C1:afsm_c1|EA
+Name EA.sF EA.sE EA.sD EA.sC EA.sB EA.sA EA.s9 EA.s8 EA.s7 EA.s6 EA.s5 EA.s4 EA.s3 EA.s2 EA.s1 EA.s0 
+EA.s0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+EA.s1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+EA.s2 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+EA.s3 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+EA.s4 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+EA.s5 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+EA.s6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+EA.s7 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+EA.s8 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+EA.s9 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+EA.sA 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+EA.sB 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+EA.sC 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+EA.sD 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+EA.sE 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+EA.sF 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |SLOTMACHINE|Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA
+Name EA.E6 EA.E5 EA.E4 EA.E3 EA.E2 EA.E1 EA.E0 
+EA.E0 0 0 0 0 0 0 0 
+EA.E1 0 0 0 0 0 1 1 
+EA.E2 0 0 0 0 1 0 1 
+EA.E3 0 0 0 1 0 0 1 
+EA.E4 0 0 1 0 0 0 1 
+EA.E5 0 1 0 0 0 0 1 
+EA.E6 1 0 0 0 0 0 1 

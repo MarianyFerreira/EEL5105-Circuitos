@@ -1,0 +1,165 @@
+|ContadorCredito_Topo
+CREDITO[0] => ContadorCredito_Somador:SOMADOR_SUBTRATOR.credito[0]
+CREDITO[1] => ContadorCredito_Somador:SOMADOR_SUBTRATOR.credito[1]
+CREDITO[2] => ContadorCredito_Somador:SOMADOR_SUBTRATOR.credito[2]
+CREDITO[3] => ContadorCredito_Somador:SOMADOR_SUBTRATOR.credito[3]
+CREDITO[4] => ContadorCredito_Somador:SOMADOR_SUBTRATOR.credito[4]
+CREDITO[5] => ContadorCredito_Somador:SOMADOR_SUBTRATOR.credito[5]
+CREDITO[6] => ContadorCredito_Somador:SOMADOR_SUBTRATOR.credito[6]
+CREDITO[7] => ContadorCredito_Somador:SOMADOR_SUBTRATOR.credito[7]
+CREDITO[8] => ContadorCredito_Somador:SOMADOR_SUBTRATOR.credito[8]
+CREDITO[9] => ContadorCredito_Somador:SOMADOR_SUBTRATOR.credito[9]
+CREDITO[10] => ContadorCredito_Somador:SOMADOR_SUBTRATOR.credito[10]
+CREDITO_23 => ContadorCredito_Mux:MUX_REGISTRADOR.s
+KEY0 => ContadorCredito_Comb:COMB_REGISTRADOR.rst
+RESET_CONTADOR => ContadorCredito_Comb:COMB_REGISTRADOR.rst_contador
+CLOCK => ContadorCredito_Registrador:REGISTRADOR.clock
+CREDITO_NOVO[0] <= ContadorCredito_Registrador:REGISTRADOR.saida[0]
+CREDITO_NOVO[1] <= ContadorCredito_Registrador:REGISTRADOR.saida[1]
+CREDITO_NOVO[2] <= ContadorCredito_Registrador:REGISTRADOR.saida[2]
+CREDITO_NOVO[3] <= ContadorCredito_Registrador:REGISTRADOR.saida[3]
+CREDITO_NOVO[4] <= ContadorCredito_Registrador:REGISTRADOR.saida[4]
+CREDITO_NOVO[5] <= ContadorCredito_Registrador:REGISTRADOR.saida[5]
+CREDITO_NOVO[6] <= ContadorCredito_Registrador:REGISTRADOR.saida[6]
+CREDITO_NOVO[7] <= ContadorCredito_Registrador:REGISTRADOR.saida[7]
+CREDITO_NOVO[8] <= ContadorCredito_Registrador:REGISTRADOR.saida[8]
+CREDITO_NOVO[9] <= ContadorCredito_Registrador:REGISTRADOR.saida[9]
+MSB <= ContadorCredito_Registrador:REGISTRADOR.saida[10]
+
+
+|ContadorCredito_Topo|ContadorCredito_Somador:SOMADOR_SUBTRATOR
+creditoAtual[0] => Add0.IN11
+creditoAtual[1] => Add0.IN10
+creditoAtual[2] => Add0.IN9
+creditoAtual[3] => Add0.IN8
+creditoAtual[4] => Add0.IN7
+creditoAtual[5] => Add0.IN6
+creditoAtual[6] => Add0.IN5
+creditoAtual[7] => Add0.IN4
+creditoAtual[8] => Add0.IN3
+creditoAtual[9] => Add0.IN2
+creditoAtual[10] => Add0.IN1
+credito[0] => Add0.IN22
+credito[1] => Add0.IN21
+credito[2] => Add0.IN20
+credito[3] => Add0.IN19
+credito[4] => Add0.IN18
+credito[5] => Add0.IN17
+credito[6] => Add0.IN16
+credito[7] => Add0.IN15
+credito[8] => Add0.IN14
+credito[9] => Add0.IN13
+credito[10] => Add0.IN12
+saida[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[7] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[8] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[9] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[10] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ContadorCredito_Topo|ContadorCredito_Mux:MUX_REGISTRADOR
+credito[0] => saida.DATAB
+credito[1] => saida.DATAB
+credito[2] => saida.DATAB
+credito[3] => saida.DATAB
+credito[4] => saida.DATAB
+credito[5] => saida.DATAB
+credito[6] => saida.DATAB
+credito[7] => saida.DATAB
+credito[8] => saida.DATAB
+credito[9] => saida.DATAB
+credito[10] => saida.DATAB
+credito23[0] => saida.DATAA
+credito23[1] => saida.DATAA
+credito23[2] => saida.DATAA
+credito23[3] => saida.DATAA
+credito23[4] => saida.DATAA
+credito23[5] => saida.DATAA
+credito23[6] => saida.DATAA
+credito23[7] => saida.DATAA
+credito23[8] => saida.DATAA
+credito23[9] => saida.DATAA
+credito23[10] => saida.DATAA
+s => saida.OUTPUTSELECT
+s => saida.OUTPUTSELECT
+s => saida.OUTPUTSELECT
+s => saida.OUTPUTSELECT
+s => saida.OUTPUTSELECT
+s => saida.OUTPUTSELECT
+s => saida.OUTPUTSELECT
+s => saida.OUTPUTSELECT
+s => saida.OUTPUTSELECT
+s => saida.OUTPUTSELECT
+s => saida.OUTPUTSELECT
+saida[0] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[7] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[8] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[9] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[10] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ContadorCredito_Topo|ContadorCredito_Comb:COMB_REGISTRADOR
+rst => saida.IN0
+rst_contador => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ContadorCredito_Topo|ContadorCredito_Registrador:REGISTRADOR
+reset => saida[0]~reg0.ACLR
+reset => saida[1]~reg0.ACLR
+reset => saida[2]~reg0.ACLR
+reset => saida[3]~reg0.ACLR
+reset => saida[4]~reg0.ACLR
+reset => saida[5]~reg0.ACLR
+reset => saida[6]~reg0.ACLR
+reset => saida[7]~reg0.ACLR
+reset => saida[8]~reg0.ACLR
+reset => saida[9]~reg0.ACLR
+reset => saida[10]~reg0.ACLR
+clock => saida[0]~reg0.CLK
+clock => saida[1]~reg0.CLK
+clock => saida[2]~reg0.CLK
+clock => saida[3]~reg0.CLK
+clock => saida[4]~reg0.CLK
+clock => saida[5]~reg0.CLK
+clock => saida[6]~reg0.CLK
+clock => saida[7]~reg0.CLK
+clock => saida[8]~reg0.CLK
+clock => saida[9]~reg0.CLK
+clock => saida[10]~reg0.CLK
+credito[0] => saida[0]~reg0.DATAIN
+credito[1] => saida[1]~reg0.DATAIN
+credito[2] => saida[2]~reg0.DATAIN
+credito[3] => saida[3]~reg0.DATAIN
+credito[4] => saida[4]~reg0.DATAIN
+credito[5] => saida[5]~reg0.DATAIN
+credito[6] => saida[6]~reg0.DATAIN
+credito[7] => saida[7]~reg0.DATAIN
+credito[8] => saida[8]~reg0.DATAIN
+credito[9] => saida[9]~reg0.DATAIN
+credito[10] => saida[10]~reg0.DATAIN
+saida[0] <= saida[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= saida[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= saida[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= saida[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= saida[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= saida[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= saida[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida[7] <= saida[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida[8] <= saida[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida[9] <= saida[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida[10] <= saida[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

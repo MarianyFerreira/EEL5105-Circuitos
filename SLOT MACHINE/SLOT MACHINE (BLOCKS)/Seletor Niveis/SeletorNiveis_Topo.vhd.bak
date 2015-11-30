@@ -1,0 +1,48 @@
+library ieee; 
+use ieee.std_logic_1164.all; 
+
+
+entity SeletorNiveis_Topo is
+
+ port(-- Entradas
+		sw9			: in std_logic; 
+		clock_50		: in  std_logic;
+		
+		-- Saidas
+		clock			: out std_logic
+);  
+end SeletorNiveis_MUX; 
+
+
+architecture arch of SeletorNiveis_MUX is 
+
+component clock_conv 	
+ port(-- Entradas
+		IN_50MHz		: in  std_logic;
+		
+		-- Saidas
+		OUT_1Hz		: out std_logic;
+		OUT_2Hz		: out std_logic
+	);
+end component;
+
+component SeletorNiveis_MUX
+
+ port(-- Entradas
+		  Clock_1hz	:	in std_logic;
+		  Clock_2hz	: 	in std_logic; 
+        Sel			:	in std_logic;
+		-- Saidas		  
+        saida		: 	out std_logic
+		  );
+		  
+end component; 
+
+	signal clock1Hz_mux, clock2Hz_mux: std_logic;
+	
+begin
+
+	
+
+	
+end arch;

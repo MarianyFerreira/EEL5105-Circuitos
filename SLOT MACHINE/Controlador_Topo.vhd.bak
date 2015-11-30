@@ -1,0 +1,45 @@
+library ieee; 
+use ieee.std_logic_1164.all; 
+
+
+entity Controlador_Topo is
+
+ port(-- Entradas 
+		MSB: in std_logic;
+		KEY3: in std_logic;
+		KEY0: in std_logic;
+		
+		clock_50: in std_logic;
+
+		-- Saidas
+		
+		CREDITO_23: out std_logic;
+		HABILITA_PREMIO: out std_logic;
+		RESET_CONTADOR: out std_logic;
+		RODADAS:  out std_logic_vector (3 downto 0);
+		
+		HEX5: out std_logic_vector (6 downto 0);
+		HEX4: out std_logic_vector (6 downto 0);
+		HEX3: out std_logic_vector (6 downto 0)
+		
+);  
+end Controlador_Topo; 
+
+--------------------------------------------------------------------------
+
+architecture arch of Controlador_Topo is
+
+component Controlador_decod
+	
+	port (A: in std_logic_vector (3 downto 0);
+			F: out std_logic_vector(6 downto 0)
+			);
+
+end component;
+
+---------------------------------------------------------------------------
+
+
+begin
+
+end arch;

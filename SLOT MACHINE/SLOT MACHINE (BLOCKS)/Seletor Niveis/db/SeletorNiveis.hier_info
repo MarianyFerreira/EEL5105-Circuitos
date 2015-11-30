@@ -1,0 +1,44 @@
+|SeletorNiveis_Topo
+CLOCK_50 => SeletorNiveis_clock:topo_clock.IN_50MHz
+SW9 => SeletorNiveis_MUX:topo_mux.s
+CLOCK << SeletorNiveis_MUX:topo_mux.f
+
+
+|SeletorNiveis_Topo|SeletorNiveis_clock:topo_clock
+IN_50MHz => OUT_2Hz~reg0.CLK
+IN_50MHz => count_a[0].CLK
+IN_50MHz => count_a[1].CLK
+IN_50MHz => count_a[2].CLK
+IN_50MHz => count_a[3].CLK
+IN_50MHz => count_a[4].CLK
+IN_50MHz => count_a[5].CLK
+IN_50MHz => count_a[6].CLK
+IN_50MHz => count_a[7].CLK
+IN_50MHz => count_a[8].CLK
+IN_50MHz => count_a[9].CLK
+IN_50MHz => count_a[10].CLK
+IN_50MHz => count_a[11].CLK
+IN_50MHz => count_a[12].CLK
+IN_50MHz => count_a[13].CLK
+IN_50MHz => count_a[14].CLK
+IN_50MHz => count_a[15].CLK
+IN_50MHz => count_a[16].CLK
+IN_50MHz => count_a[17].CLK
+IN_50MHz => count_a[18].CLK
+IN_50MHz => count_a[19].CLK
+IN_50MHz => count_a[20].CLK
+IN_50MHz => count_a[21].CLK
+IN_50MHz => count_a[22].CLK
+IN_50MHz => count_a[23].CLK
+IN_50MHz => count_a[24].CLK
+OUT_1Hz <= OUT_1Hz.DB_MAX_OUTPUT_PORT_TYPE
+OUT_2Hz <= OUT_2Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SeletorNiveis_Topo|SeletorNiveis_MUX:topo_mux
+w0 => f.DATAB
+w1 => f.DATAA
+s => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+

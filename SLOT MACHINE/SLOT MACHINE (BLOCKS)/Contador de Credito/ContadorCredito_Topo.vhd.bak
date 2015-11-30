@@ -1,0 +1,69 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity ContadorCredito_Topo is
+	port (
+	
+		CREDITO: in std_logic_vector (10 downto 0);
+		CREDITO_23: in std_logic;
+		KEY0: in std_logic;
+		RESET_CONTADOR: in std_logic;
+		
+		CLOCK: in std_logic;
+		
+		CREDITO_NOVO: out std_logic_vector (9 downto 0);
+		MSB: : out std_logic;
+		);
+end ContadorCredito_Topo;
+			
+--------------------------------------------------------------------------------
+
+architecture ARCH of ContadorCredito_Topo is
+
+component ContadorCredito_Somador
+	port (creditoAtual: in std_logic_vector(10 downto 0);
+			credito: in std_Logic_vector(10 downto 0);
+			
+			saida: out std_Logic_vector(10 downto 0)
+			);	
+end component;
+
+
+component ContadorCredito_Mux
+	port ( credito, credito23: IN std_logic_vector (10 downto 0);
+			 s: IN STD_LOGIC ;
+		 
+			 saida : OUT std_logic_vector (10 downto 0)
+			) ;
+
+end component;
+
+
+component ContadorCredito_Comb
+
+	port(	rst: in std_logic;
+			rst_contador: in std_logic;
+			
+		   saida: out std_logic
+			);
+end component;
+
+
+
+component ContadorCredito_Registrador
+
+	port(	reset: in std_logic;
+			clock: in std_logic;
+			credito: in std_logic_vector (10 downto 0);
+			
+		   saida: out std_logic_vector (10 downto 0)
+			);
+end component;
+
+
+------------------------------------------------------------------------------
+	
+	
+	begin
+	
+	end ARCH;

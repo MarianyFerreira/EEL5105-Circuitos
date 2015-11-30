@@ -1,0 +1,18 @@
+library ieee; 
+use ieee.std_logic_1164.all; 
+
+
+entity MUX2to1_Clock is port( 
+        Clock_1hz, Clock_2hz:        in        std_logic; 
+        Sel:        in        std_logic; 
+        saida:         out        std_logic
+		  ); 
+end MUX2to1; 
+
+
+architecture behavior of MUX2to1 is 
+begin 
+
+	saida <=  Clock_1hz when '0' else saida <= Clock_2hz; 
+        end process; 
+end behavior;
