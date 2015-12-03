@@ -3,227 +3,227 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'SW[9]'
-Slack : -10.050
-TNS   : -492.172
-
-Type  : Slow 1100mV 85C Model Setup 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E0'
-Slack : -7.905
-TNS   : -40.023
+Slack : -8.049
+TNS   : -233.244
 
 Type  : Slow 1100mV 85C Model Setup 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E1'
-Slack : -7.313
-TNS   : -29.922
+Slack : -5.145
+TNS   : -20.902
+
+Type  : Slow 1100mV 85C Model Setup 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E0'
+Slack : -4.176
+TNS   : -6.738
 
 Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -2.443
-TNS   : -161.733
+Slack : -2.298
+TNS   : -144.069
 
 Type  : Slow 1100mV 85C Model Hold 'SW[9]'
-Slack : -6.128
-TNS   : -24.427
+Slack : -0.050
+TNS   : -0.050
 
 Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.330
+Slack : 0.286
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E1'
-Slack : 0.710
+Slack : 0.377
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E0'
-Slack : 0.906
+Slack : 0.792
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'SW[9]'
-Slack : -8.820
-TNS   : -96.995
+Slack : -4.469
+TNS   : -48.622
 
 Type  : Slow 1100mV 85C Model Removal 'SW[9]'
-Slack : 2.523
+Slack : 1.139
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'SW[9]'
-Slack : -0.528
-TNS   : -62.573
+Slack : -0.493
+TNS   : -52.379
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -0.394
-TNS   : -37.639
+TNS   : -34.370
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E1'
-Slack : 0.254
+Slack : 0.201
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E0'
-Slack : 0.341
+Slack : 0.389
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'SW[9]'
-Slack : -9.694
-TNS   : -468.561
-
-Type  : Slow 1100mV 0C Model Setup 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E0'
-Slack : -7.693
-TNS   : -38.653
+Slack : -7.905
+TNS   : -223.650
 
 Type  : Slow 1100mV 0C Model Setup 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E1'
-Slack : -7.188
-TNS   : -28.951
+Slack : -4.890
+TNS   : -20.082
+
+Type  : Slow 1100mV 0C Model Setup 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E0'
+Slack : -4.059
+TNS   : -6.553
 
 Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -2.399
-TNS   : -158.829
+Slack : -2.262
+TNS   : -141.886
 
 Type  : Slow 1100mV 0C Model Hold 'SW[9]'
-Slack : -5.908
-TNS   : -23.461
+Slack : -0.134
+TNS   : -0.134
 
 Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
-Slack : 0.308
+Slack : 0.269
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E1'
-Slack : 0.595
+Slack : 0.361
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E0'
-Slack : 0.693
+Slack : 0.646
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'SW[9]'
-Slack : -8.448
-TNS   : -92.903
+Slack : -4.227
+TNS   : -45.968
 
 Type  : Slow 1100mV 0C Model Removal 'SW[9]'
-Slack : 2.158
+Slack : 0.941
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'SW[9]'
-Slack : -0.537
-TNS   : -63.247
+Slack : -0.514
+TNS   : -52.796
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -0.394
-TNS   : -41.058
+TNS   : -37.702
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E1'
-Slack : 0.257
+Slack : 0.233
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E0'
-Slack : 0.323
+Slack : 0.364
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'SW[9]'
-Slack : -7.497
-TNS   : -360.817
-
-Type  : Fast 1100mV 85C Model Setup 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E0'
-Slack : -4.047
-TNS   : -20.472
+Slack : -4.531
+TNS   : -152.473
 
 Type  : Fast 1100mV 85C Model Setup 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E1'
-Slack : -3.621
-TNS   : -15.132
+Slack : -2.520
+TNS   : -10.132
+
+Type  : Fast 1100mV 85C Model Setup 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E0'
+Slack : -1.893
+TNS   : -3.517
 
 Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -0.951
-TNS   : -60.782
+Slack : -0.900
+TNS   : -54.964
 
 Type  : Fast 1100mV 85C Model Hold 'SW[9]'
-Slack : -3.486
-TNS   : -13.897
+Slack : 0.111
+TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.194
+Slack : 0.167
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E1'
-Slack : 0.538
+Slack : 0.316
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E0'
-Slack : 0.609
+Slack : 0.466
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'SW[9]'
-Slack : -6.504
-TNS   : -71.534
+Slack : -3.471
+TNS   : -37.667
 
 Type  : Fast 1100mV 85C Model Removal 'SW[9]'
-Slack : 1.807
+Slack : 0.827
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'SW[9]'
-Slack : -0.531
-TNS   : -43.146
+Slack : -0.499
+TNS   : -28.599
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.078
-TNS   : -5.469
+Slack : -0.088
+TNS   : -5.695
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E1'
-Slack : 0.245
+Slack : 0.227
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E0'
-Slack : 0.428
+Slack : 0.448
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'SW[9]'
-Slack : -6.236
-TNS   : -295.778
-
-Type  : Fast 1100mV 0C Model Setup 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E0'
-Slack : -3.805
-TNS   : -19.207
+Slack : -4.049
+TNS   : -123.579
 
 Type  : Fast 1100mV 0C Model Setup 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E1'
-Slack : -3.461
-TNS   : -14.304
+Slack : -2.369
+TNS   : -9.297
+
+Type  : Fast 1100mV 0C Model Setup 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E0'
+Slack : -1.763
+TNS   : -3.179
 
 Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -0.808
-TNS   : -51.277
+Slack : -0.759
+TNS   : -46.139
 
 Type  : Fast 1100mV 0C Model Hold 'SW[9]'
-Slack : -3.380
-TNS   : -13.487
+Slack : -0.059
+TNS   : -0.059
 
 Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
-Slack : 0.173
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Hold 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E0'
-Slack : 0.445
+Slack : 0.151
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E1'
-Slack : 0.472
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E0'
+Slack : 0.348
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'SW[9]'
-Slack : -5.498
-TNS   : -60.473
+Slack : -2.880
+TNS   : -31.227
 
 Type  : Fast 1100mV 0C Model Removal 'SW[9]'
-Slack : 1.255
+Slack : 0.542
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'SW[9]'
-Slack : -0.489
-TNS   : -39.788
+Slack : -0.474
+TNS   : -27.560
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.079
-TNS   : -5.616
+Slack : -0.086
+TNS   : -5.600
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E1'
-Slack : 0.285
+Slack : 0.283
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E0'
-Slack : 0.428
+Slack : 0.444
 TNS   : 0.000
 
 ------------------------------------------------------------

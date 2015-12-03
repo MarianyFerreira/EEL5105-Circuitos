@@ -48,7 +48,7 @@ architecture ARCH of Controlador_FSM_Control is
 				elsif rising_edge(CLOCK) then
 					EA <= PE;
 					INCREMENTA_RODADAS <= INCREMENTA_RODADAS_TEMP;
-					RODADAS <= INCREMENTA_RODADAS_TEMP;
+					RODADAS <= INCREMENTA_RODADAS;
 				end if;
 		end process;
 
@@ -61,7 +61,7 @@ architecture ARCH of Controlador_FSM_Control is
 						
 						ESTADOS <= "0000";
 				
-						RESET_CONTADOR <= '0';
+						RESET_CONTADOR <= '1';
 						HABILITA_CREDITO <= '0';
 						C1 <= '0';
 						C2 <= '0';
@@ -81,7 +81,7 @@ architecture ARCH of Controlador_FSM_Control is
 				when E1 =>
 						ESTADOS <= "0001";
 				
-						RESET_CONTADOR <= '1';
+						RESET_CONTADOR <= '0';
 						CREDITO_23 <= '1';
 					
 						PE <= E2;
