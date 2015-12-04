@@ -1,0 +1,787 @@
+# do SlotMachine_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera_lite/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera_lite/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:34 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SLOTMACHINE
+# -- Compiling architecture ARCH of SLOTMACHINE
+# End time: 04:12:35 on Dec 04,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_Topo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:35 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_Topo.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Sequenciadores_Topo
+# -- Compiling architecture ARCH of Sequenciadores_Topo
+# End time: 04:12:35 on Dec 04,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C3.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:35 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Sequenciadores_FSM_C3
+# -- Compiling architecture ARCH of Sequenciadores_FSM_C3
+# End time: 04:12:35 on Dec 04,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:35 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Sequenciadores_FSM_C2
+# -- Compiling architecture ARCH of Sequenciadores_FSM_C2
+# End time: 04:12:35 on Dec 04,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:35 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Sequenciadores_FSM_C1
+# -- Compiling architecture ARCH of Sequenciadores_FSM_C1
+# End time: 04:12:35 on Dec 04,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_decod.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:35 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_decod.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Sequenciadores_decod
+# -- Compiling architecture ARCH of Sequenciadores_decod
+# End time: 04:12:35 on Dec 04,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Topo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:35 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Topo.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SeletorNiveis_Topo
+# -- Compiling architecture arch of SeletorNiveis_Topo
+# End time: 04:12:35 on Dec 04,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Mux.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:35 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SeletorNiveis_MUX
+# -- Compiling architecture Behavior of SeletorNiveis_MUX
+# End time: 04:12:35 on Dec 04,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Clock.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:35 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Clock.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SeletorNiveis_clock
+# -- Compiling architecture arch of SeletorNiveis_clock
+# End time: 04:12:35 on Dec 04,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_Topo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:35 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_Topo.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Controlador_Topo
+# -- Compiling architecture arch of Controlador_Topo
+# End time: 04:12:36 on Dec 04,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:36 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Controlador_FSM_Control
+# -- Compiling architecture ARCH of Controlador_FSM_Control
+# End time: 04:12:36 on Dec 04,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_decod.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:36 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_decod.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Controlador_decod
+# -- Compiling architecture ARCH of Controlador_decod
+# End time: 04:12:36 on Dec 04,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Topo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:36 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Topo.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ContadorCredito_Topo
+# -- Compiling architecture ARCH of ContadorCredito_Topo
+# End time: 04:12:36 on Dec 04,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Somador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:36 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Somador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity ContadorCredito_Somador
+# -- Compiling architecture ARCH of ContadorCredito_Somador
+# End time: 04:12:36 on Dec 04,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Registrador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:36 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Registrador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ContadorCredito_Registrador
+# -- Compiling architecture ARCH of ContadorCredito_Registrador
+# End time: 04:12:36 on Dec 04,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Mux.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:36 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ContadorCredito_Mux
+# -- Compiling architecture ARCH of ContadorCredito_Mux
+# End time: 04:12:36 on Dec 04,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Comb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:36 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Comb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ContadorCredito_Comb
+# -- Compiling architecture ARCH of ContadorCredito_Comb
+# End time: 04:12:36 on Dec 04,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_Topo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:36 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_Topo.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Comparador_Topo
+# -- Compiling architecture ARCH of Comparador_Topo
+# End time: 04:12:36 on Dec 04,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_ROM.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:36 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_ROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity comparador_ROM
+# -- Compiling architecture ARCH of comparador_ROM
+# End time: 04:12:36 on Dec 04,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_And.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 04:12:36 on Dec 04,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_And.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Hab_AND_data
+# -- Compiling architecture behavior of Hab_AND_data
+# End time: 04:12:36 on Dec 04,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.seletorniveis_topo
+# vsim work.seletorniveis_topo 
+# Start time: 04:13:46 on Dec 04,2015
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.seletorniveis_topo(arch)
+# Loading ieee.numeric_std(body)
+# Loading work.seletorniveis_clock(arch)
+# Loading work.seletorniveis_mux(behavior)
+add wave -position insertpoint  \
+sim:/seletorniveis_topo/CLOCKin \
+sim:/seletorniveis_topo/SW9 \
+sim:/seletorniveis_topo/CLOCK \
+sim:/seletorniveis_topo/clock1Hz_mux \
+sim:/seletorniveis_topo/clock2Hz_mux
+force -freeze sim:/seletorniveis_topo/CLOCKin 1 0, 0 {50 ps} -r 100
+force -freeze sim:/seletorniveis_topo/SW9 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/seletorniveis_topo/SW9 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 04:23:43 on Dec 04,2015, Elapsed time: 0:09:57
+# Errors: 0, Warnings: 0

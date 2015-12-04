@@ -1,0 +1,598 @@
+Analysis & Synthesis report for SlotMachine
+Fri Dec 04 07:46:14 2015
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |SLOTMACHINE|Sequenciadores_Topo:SEQUENCIADORES|Sequenciadores_FSM_C3:afsm_c3|EA
+  9. State Machine - |SLOTMACHINE|Sequenciadores_Topo:SEQUENCIADORES|Sequenciadores_FSM_C2:afsm_c2|EA
+ 10. State Machine - |SLOTMACHINE|Sequenciadores_Topo:SEQUENCIADORES|Sequenciadores_FSM_C1:afsm_c1|EA
+ 11. State Machine - |SLOTMACHINE|Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA
+ 12. User-Specified and Inferred Latches
+ 13. General Register Statistics
+ 14. Port Connectivity Checks: "ContadorCredito_Topo:CONTADOR_DE_CREDITO|ContadorCredito_Mux:MUX_REGISTRADOR"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Fri Dec 04 07:46:14 2015       ;
+; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
+; Revision Name                   ; SlotMachine                                 ;
+; Top-level Entity Name           ; SLOTMACHINE                                 ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 127                                         ;
+; Total pins                      ; 67                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; SLOTMACHINE        ; SlotMachine        ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Synthesis Seed                                                                  ; 1                  ; 1                  ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ; < 0.1%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
+; SLOTMACHINE.vhd                  ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd                 ;         ;
+; Sequenciadores_Topo.vhd          ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_Topo.vhd         ;         ;
+; Sequenciadores_FSM_C3.vhd        ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C3.vhd       ;         ;
+; Sequenciadores_FSM_C2.vhd        ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C2.vhd       ;         ;
+; Sequenciadores_FSM_C1.vhd        ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C1.vhd       ;         ;
+; Sequenciadores_decod.vhd         ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_decod.vhd        ;         ;
+; SeletorNiveis_Topo.vhd           ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Topo.vhd          ;         ;
+; SeletorNiveis_Mux.vhd            ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Mux.vhd           ;         ;
+; SeletorNiveis_Clock.vhd          ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Clock.vhd         ;         ;
+; Controlador_Topo.vhd             ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_Topo.vhd            ;         ;
+; Controlador_FSM_Control.vhd      ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd     ;         ;
+; Controlador_decod.vhd            ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_decod.vhd           ;         ;
+; ContadorCredito_Topo.vhd         ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Topo.vhd        ;         ;
+; ContadorCredito_Somador.vhd      ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Somador.vhd     ;         ;
+; ContadorCredito_Registrador.vhd  ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Registrador.vhd ;         ;
+; ContadorCredito_Mux.vhd          ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Mux.vhd         ;         ;
+; ContadorCredito_Comb.vhd         ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Comb.vhd        ;         ;
+; Comparador_Topo.vhd              ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_Topo.vhd             ;         ;
+; Comparador_ROM.vhd               ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_ROM.vhd              ;         ;
+; Comparador_And.vhd               ; yes             ; User VHDL File  ; C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_And.vhd              ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                     ;
++---------------------------------------------+-------------------------------------------------------------------+
+; Resource                                    ; Usage                                                             ;
++---------------------------------------------+-------------------------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 139                                                               ;
+;                                             ;                                                                   ;
+; Combinational ALUT usage for logic          ; 224                                                               ;
+;     -- 7 input functions                    ; 0                                                                 ;
+;     -- 6 input functions                    ; 47                                                                ;
+;     -- 5 input functions                    ; 16                                                                ;
+;     -- 4 input functions                    ; 51                                                                ;
+;     -- <=3 input functions                  ; 110                                                               ;
+;                                             ;                                                                   ;
+; Dedicated logic registers                   ; 127                                                               ;
+;                                             ;                                                                   ;
+; I/O pins                                    ; 67                                                                ;
+;                                             ;                                                                   ;
+; Total DSP Blocks                            ; 0                                                                 ;
+;                                             ;                                                                   ;
+; Maximum fan-out node                        ; SeletorNiveis_Topo:SELETOR_DE_NIVEIS|SeletorNiveis_MUX:topo_mux|f ;
+; Maximum fan-out                             ; 74                                                                ;
+; Total fan-out                               ; 1377                                                              ;
+; Average fan-out                             ; 2.84                                                              ;
++---------------------------------------------+-------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                          ;
++---------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                        ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                             ; Library Name ;
++---------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------+--------------+
+; |SLOTMACHINE                                      ; 224 (1)           ; 127 (0)      ; 0                 ; 0          ; 67   ; 0            ; |SLOTMACHINE                                                                                    ; work         ;
+;    |Comparador_Topo:COMPARADOR|                   ; 39 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|Comparador_Topo:COMPARADOR                                                         ; work         ;
+;       |comparador_ROM:ROM|                        ; 39 (39)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|Comparador_Topo:COMPARADOR|comparador_ROM:ROM                                      ; work         ;
+;    |ContadorCredito_Topo:CONTADOR_DE_CREDITO|     ; 12 (0)            ; 11 (0)       ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|ContadorCredito_Topo:CONTADOR_DE_CREDITO                                           ; work         ;
+;       |ContadorCredito_Comb:COMB_REGISTRADOR|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|ContadorCredito_Topo:CONTADOR_DE_CREDITO|ContadorCredito_Comb:COMB_REGISTRADOR     ; work         ;
+;       |ContadorCredito_Registrador:REGISTRADOR|   ; 0 (0)             ; 11 (11)      ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|ContadorCredito_Topo:CONTADOR_DE_CREDITO|ContadorCredito_Registrador:REGISTRADOR   ; work         ;
+;       |ContadorCredito_Somador:SOMADOR_SUBTRATOR| ; 11 (11)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|ContadorCredito_Topo:CONTADOR_DE_CREDITO|ContadorCredito_Somador:SOMADOR_SUBTRATOR ; work         ;
+;    |Controlador_Topo:CONTROLADOR|                 ; 40 (0)            ; 15 (0)       ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|Controlador_Topo:CONTROLADOR                                                       ; work         ;
+;       |Controlador_FSM_Control:FSM_CONTROL|       ; 26 (26)           ; 15 (15)      ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL                   ; work         ;
+;       |Controlador_decod:FSM_ESTADOS_DECOD|       ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|Controlador_Topo:CONTROLADOR|Controlador_decod:FSM_ESTADOS_DECOD                   ; work         ;
+;       |Controlador_decod:FSM_RODADAS_DECOD|       ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|Controlador_Topo:CONTROLADOR|Controlador_decod:FSM_RODADAS_DECOD                   ; work         ;
+;    |SeletorNiveis_Topo:SELETOR_DE_NIVEIS|         ; 70 (0)            ; 53 (0)       ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|SeletorNiveis_Topo:SELETOR_DE_NIVEIS                                               ; work         ;
+;       |SeletorNiveis_MUX:topo_mux|                ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|SeletorNiveis_Topo:SELETOR_DE_NIVEIS|SeletorNiveis_MUX:topo_mux                    ; work         ;
+;       |SeletorNiveis_clock:topo_clock|            ; 69 (69)           ; 53 (53)      ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|SeletorNiveis_Topo:SELETOR_DE_NIVEIS|SeletorNiveis_clock:topo_clock                ; work         ;
+;    |Sequenciadores_Topo:SEQUENCIADORES|           ; 62 (0)            ; 48 (0)       ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|Sequenciadores_Topo:SEQUENCIADORES                                                 ; work         ;
+;       |Sequenciadores_FSM_C1:afsm_c1|             ; 12 (12)           ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|Sequenciadores_Topo:SEQUENCIADORES|Sequenciadores_FSM_C1:afsm_c1                   ; work         ;
+;       |Sequenciadores_FSM_C2:afsm_c2|             ; 12 (12)           ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|Sequenciadores_Topo:SEQUENCIADORES|Sequenciadores_FSM_C2:afsm_c2                   ; work         ;
+;       |Sequenciadores_FSM_C3:afsm_c3|             ; 12 (12)           ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|Sequenciadores_Topo:SEQUENCIADORES|Sequenciadores_FSM_C3:afsm_c3                   ; work         ;
+;       |Sequenciadores_decod:adecod_c1|            ; 8 (8)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|Sequenciadores_Topo:SEQUENCIADORES|Sequenciadores_decod:adecod_c1                  ; work         ;
+;       |Sequenciadores_decod:adecod_c2|            ; 10 (10)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|Sequenciadores_Topo:SEQUENCIADORES|Sequenciadores_decod:adecod_c2                  ; work         ;
+;       |Sequenciadores_decod:adecod_c3|            ; 8 (8)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |SLOTMACHINE|Sequenciadores_Topo:SEQUENCIADORES|Sequenciadores_decod:adecod_c3                  ; work         ;
++---------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |SLOTMACHINE|Sequenciadores_Topo:SEQUENCIADORES|Sequenciadores_FSM_C3:afsm_c3|EA                                      ;
++-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+; Name  ; EA.sF ; EA.sE ; EA.sD ; EA.sC ; EA.sB ; EA.sA ; EA.s9 ; EA.s8 ; EA.s7 ; EA.s6 ; EA.s5 ; EA.s4 ; EA.s3 ; EA.s2 ; EA.s1 ; EA.s0 ;
++-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+; EA.s0 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ;
+; EA.s1 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 1     ;
+; EA.s2 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 1     ;
+; EA.s3 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 1     ;
+; EA.s4 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 1     ;
+; EA.s5 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.s6 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.s7 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.s8 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.s9 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.sA ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.sB ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.sC ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.sD ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.sE ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.sF ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
++-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |SLOTMACHINE|Sequenciadores_Topo:SEQUENCIADORES|Sequenciadores_FSM_C2:afsm_c2|EA                                      ;
++-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+; Name  ; EA.sF ; EA.sE ; EA.sD ; EA.sC ; EA.sB ; EA.sA ; EA.s9 ; EA.s8 ; EA.s7 ; EA.s6 ; EA.s5 ; EA.s4 ; EA.s3 ; EA.s2 ; EA.s1 ; EA.s0 ;
++-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+; EA.s0 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ;
+; EA.s1 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 1     ;
+; EA.s2 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 1     ;
+; EA.s3 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 1     ;
+; EA.s4 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 1     ;
+; EA.s5 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.s6 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.s7 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.s8 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.s9 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.sA ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.sB ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.sC ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.sD ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.sE ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.sF ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
++-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |SLOTMACHINE|Sequenciadores_Topo:SEQUENCIADORES|Sequenciadores_FSM_C1:afsm_c1|EA                                      ;
++-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+; Name  ; EA.sF ; EA.sE ; EA.sD ; EA.sC ; EA.sB ; EA.sA ; EA.s9 ; EA.s8 ; EA.s7 ; EA.s6 ; EA.s5 ; EA.s4 ; EA.s3 ; EA.s2 ; EA.s1 ; EA.s0 ;
++-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+; EA.s0 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ;
+; EA.s1 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 1     ;
+; EA.s2 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 1     ;
+; EA.s3 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 1     ;
+; EA.s4 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 1     ;
+; EA.s5 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.s6 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.s7 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.s8 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.s9 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.sA ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.sB ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.sC ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.sD ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.sE ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; EA.sF ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
++-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------+
+; State Machine - |SLOTMACHINE|Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA ;
++-------+-------+-------+-------+-------+-------+-------+------------------------------------------+
+; Name  ; EA.E6 ; EA.E5 ; EA.E4 ; EA.E3 ; EA.E2 ; EA.E1 ; EA.E0                                    ;
++-------+-------+-------+-------+-------+-------+-------+------------------------------------------+
+; EA.E0 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0                                        ;
+; EA.E1 ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 1                                        ;
+; EA.E2 ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 1                                        ;
+; EA.E3 ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 1                                        ;
+; EA.E4 ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 1                                        ;
+; EA.E5 ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 1                                        ;
+; EA.E6 ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1                                        ;
++-------+-------+-------+-------+-------+-------+-------+------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                                                                                              ;
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+------------------------+
+; Latch Name                                                                                  ; Latch Enable Signal                                                       ; Free of Timing Hazards ;
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+------------------------+
+; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|RESET_CONTADOR             ; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|WideOr3  ; yes                    ;
+; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|CREDITO_23                 ; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|WideOr12 ; yes                    ;
+; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|C1                         ; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|C1       ; yes                    ;
+; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|C2                         ; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|C1       ; yes                    ;
+; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|C3                         ; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|C1       ; yes                    ;
+; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|HABILITA_CREDITO           ; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|WideOr4  ; yes                    ;
+; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|INCREMENTA_RODADAS_TEMP[3] ; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|WideOr8  ; yes                    ;
+; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|INCREMENTA_RODADAS_TEMP[2] ; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|WideOr8  ; yes                    ;
+; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|INCREMENTA_RODADAS_TEMP[1] ; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|WideOr8  ; yes                    ;
+; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|INCREMENTA_RODADAS_TEMP[0] ; Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|WideOr8  ; yes                    ;
+; Number of user-specified and inferred latches = 10                                          ;                                                                           ;                        ;
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 127   ;
+; Number of registers using Synchronous Clear  ; 51    ;
+; Number of registers using Synchronous Load   ; 11    ;
+; Number of registers using Asynchronous Clear ; 66    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 59    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ContadorCredito_Topo:CONTADOR_DE_CREDITO|ContadorCredito_Mux:MUX_REGISTRADOR" ;
++------------------+-------+----------+--------------------------------------------------------------------+
+; Port             ; Type  ; Severity ; Details                                                            ;
++------------------+-------+----------+--------------------------------------------------------------------+
+; credito23[2..0]  ; Input ; Info     ; Stuck at VCC                                                       ;
+; credito23[10..5] ; Input ; Info     ; Stuck at GND                                                       ;
+; credito23[4]     ; Input ; Info     ; Stuck at VCC                                                       ;
+; credito23[3]     ; Input ; Info     ; Stuck at GND                                                       ;
++------------------+-------+----------+--------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 127                         ;
+;     CLR               ; 4                           ;
+;     CLR SLD           ; 11                          ;
+;     ENA               ; 8                           ;
+;     ENA CLR           ; 51                          ;
+;     SCLR              ; 51                          ;
+;     plain             ; 2                           ;
+; arriav_lcell_comb     ; 230                         ;
+;     arith             ; 62                          ;
+;         1 data inputs ; 51                          ;
+;         3 data inputs ; 11                          ;
+;     normal            ; 168                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 11                          ;
+;         2 data inputs ; 21                          ;
+;         3 data inputs ; 20                          ;
+;         4 data inputs ; 51                          ;
+;         5 data inputs ; 16                          ;
+;         6 data inputs ; 47                          ;
+; boundary_port         ; 67                          ;
+;                       ;                             ;
+; Max LUT depth         ; 7.70                        ;
+; Average LUT depth     ; 3.89                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+    Info: Processing started: Fri Dec 04 07:45:55 2015
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SlotMachine -c SlotMachine
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file slotmachine.vhd
+    Info (12022): Found design unit 1: SLOTMACHINE-ARCH File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 31
+    Info (12023): Found entity 1: SLOTMACHINE File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file sequenciadores_topo.vhd
+    Info (12022): Found design unit 1: Sequenciadores_Topo-ARCH File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_Topo.vhd Line: 40
+    Info (12023): Found entity 1: Sequenciadores_Topo File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_Topo.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file sequenciadores_fsm_c3.vhd
+    Info (12022): Found design unit 1: Sequenciadores_FSM_C3-ARCH File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C3.vhd Line: 13
+    Info (12023): Found entity 1: Sequenciadores_FSM_C3 File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C3.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file sequenciadores_fsm_c2.vhd
+    Info (12022): Found design unit 1: Sequenciadores_FSM_C2-ARCH File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C2.vhd Line: 13
+    Info (12023): Found entity 1: Sequenciadores_FSM_C2 File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C2.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file sequenciadores_fsm_c1.vhd
+    Info (12022): Found design unit 1: Sequenciadores_FSM_C1-ARCH File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C1.vhd Line: 13
+    Info (12023): Found entity 1: Sequenciadores_FSM_C1 File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C1.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file sequenciadores_decod.vhd
+    Info (12022): Found design unit 1: Sequenciadores_decod-ARCH File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_decod.vhd Line: 10
+    Info (12023): Found entity 1: Sequenciadores_decod File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_decod.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file seletorniveis_topo.vhd
+    Info (12022): Found design unit 1: SeletorNiveis_Topo-arch File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Topo.vhd Line: 17
+    Info (12023): Found entity 1: SeletorNiveis_Topo File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Topo.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file seletorniveis_mux.vhd
+    Info (12022): Found design unit 1: SeletorNiveis_MUX-Behavior File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Mux.vhd Line: 12
+    Info (12023): Found entity 1: SeletorNiveis_MUX File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Mux.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file seletorniveis_clock.vhd
+    Info (12022): Found design unit 1: SeletorNiveis_clock-arch File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Clock.vhd Line: 15
+    Info (12023): Found entity 1: SeletorNiveis_clock File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Clock.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file controlador_topo.vhd
+    Info (12022): Found design unit 1: Controlador_Topo-arch File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_Topo.vhd Line: 37
+    Info (12023): Found entity 1: Controlador_Topo File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_Topo.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file controlador_fsm_control.vhd
+    Info (12022): Found design unit 1: Controlador_FSM_Control-ARCH File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 34
+    Info (12023): Found entity 1: Controlador_FSM_Control File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file controlador_decod.vhd
+    Info (12022): Found design unit 1: Controlador_decod-ARCH File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_decod.vhd Line: 10
+    Info (12023): Found entity 1: Controlador_decod File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_decod.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file contadorcredito_topo.vhd
+    Info (12022): Found design unit 1: ContadorCredito_Topo-ARCH File: C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Topo.vhd Line: 22
+    Info (12023): Found entity 1: ContadorCredito_Topo File: C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Topo.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file contadorcredito_somador.vhd
+    Info (12022): Found design unit 1: ContadorCredito_Somador-ARCH File: C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Somador.vhd Line: 15
+    Info (12023): Found entity 1: ContadorCredito_Somador File: C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Somador.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file contadorcredito_registrador.vhd
+    Info (12022): Found design unit 1: ContadorCredito_Registrador-ARCH File: C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Registrador.vhd Line: 16
+    Info (12023): Found entity 1: ContadorCredito_Registrador File: C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Registrador.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file contadorcredito_mux.vhd
+    Info (12022): Found design unit 1: ContadorCredito_Mux-ARCH File: C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Mux.vhd Line: 15
+    Info (12023): Found entity 1: ContadorCredito_Mux File: C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Mux.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file contadorcredito_comb.vhd
+    Info (12022): Found design unit 1: ContadorCredito_Comb-ARCH File: C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Comb.vhd Line: 12
+    Info (12023): Found entity 1: ContadorCredito_Comb File: C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Comb.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file comparador_topo.vhd
+    Info (12022): Found design unit 1: Comparador_Topo-ARCH File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_Topo.vhd Line: 18
+    Info (12023): Found entity 1: Comparador_Topo File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_Topo.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file comparador_rom.vhd
+    Info (12022): Found design unit 1: comparador_ROM-ARCH File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_ROM.vhd Line: 15
+    Info (12023): Found entity 1: comparador_ROM File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_ROM.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file comparador_and.vhd
+    Info (12022): Found design unit 1: Hab_AND_data-behavior File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_And.vhd Line: 14
+    Info (12023): Found entity 1: Hab_AND_data File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_And.vhd Line: 5
+Info (12127): Elaborating entity "SLOTMACHINE" for the top level hierarchy
+Info (12128): Elaborating entity "SeletorNiveis_Topo" for hierarchy "SeletorNiveis_Topo:SELETOR_DE_NIVEIS" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 156
+Info (12128): Elaborating entity "SeletorNiveis_clock" for hierarchy "SeletorNiveis_Topo:SELETOR_DE_NIVEIS|SeletorNiveis_clock:topo_clock" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Topo.vhd Line: 40
+Info (12128): Elaborating entity "SeletorNiveis_MUX" for hierarchy "SeletorNiveis_Topo:SELETOR_DE_NIVEIS|SeletorNiveis_MUX:topo_mux" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Topo.vhd Line: 41
+Info (12128): Elaborating entity "Controlador_Topo" for hierarchy "Controlador_Topo:CONTROLADOR" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 158
+Info (12128): Elaborating entity "Controlador_FSM_Control" for hierarchy "Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_Topo.vhd Line: 87
+Warning (10492): VHDL Process Statement warning at Controlador_FSM_Control.vhd(167): signal "INCREMENTA_RODADAS" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 167
+Warning (10492): VHDL Process Statement warning at Controlador_FSM_Control.vhd(169): signal "INCREMENTA_RODADAS" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 169
+Warning (10492): VHDL Process Statement warning at Controlador_FSM_Control.vhd(169): signal "SEM_CREDITO" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 169
+Warning (10631): VHDL Process Statement warning at Controlador_FSM_Control.vhd(55): inferring latch(es) for signal or variable "RESET_CONTADOR", which holds its previous value in one or more paths through the process File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+Warning (10631): VHDL Process Statement warning at Controlador_FSM_Control.vhd(55): inferring latch(es) for signal or variable "HABILITA_CREDITO", which holds its previous value in one or more paths through the process File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+Warning (10631): VHDL Process Statement warning at Controlador_FSM_Control.vhd(55): inferring latch(es) for signal or variable "C1", which holds its previous value in one or more paths through the process File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+Warning (10631): VHDL Process Statement warning at Controlador_FSM_Control.vhd(55): inferring latch(es) for signal or variable "C2", which holds its previous value in one or more paths through the process File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+Warning (10631): VHDL Process Statement warning at Controlador_FSM_Control.vhd(55): inferring latch(es) for signal or variable "C3", which holds its previous value in one or more paths through the process File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+Warning (10631): VHDL Process Statement warning at Controlador_FSM_Control.vhd(55): inferring latch(es) for signal or variable "INCREMENTA_RODADAS_TEMP", which holds its previous value in one or more paths through the process File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+Warning (10631): VHDL Process Statement warning at Controlador_FSM_Control.vhd(55): inferring latch(es) for signal or variable "CREDITO_23", which holds its previous value in one or more paths through the process File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+Info (10041): Inferred latch for "CREDITO_23" at Controlador_FSM_Control.vhd(55) File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+Info (10041): Inferred latch for "INCREMENTA_RODADAS_TEMP[0]" at Controlador_FSM_Control.vhd(55) File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+Info (10041): Inferred latch for "INCREMENTA_RODADAS_TEMP[1]" at Controlador_FSM_Control.vhd(55) File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+Info (10041): Inferred latch for "INCREMENTA_RODADAS_TEMP[2]" at Controlador_FSM_Control.vhd(55) File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+Info (10041): Inferred latch for "INCREMENTA_RODADAS_TEMP[3]" at Controlador_FSM_Control.vhd(55) File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+Info (10041): Inferred latch for "C3" at Controlador_FSM_Control.vhd(55) File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+Info (10041): Inferred latch for "C2" at Controlador_FSM_Control.vhd(55) File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+Info (10041): Inferred latch for "C1" at Controlador_FSM_Control.vhd(55) File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+Info (10041): Inferred latch for "HABILITA_CREDITO" at Controlador_FSM_Control.vhd(55) File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+Info (10041): Inferred latch for "RESET_CONTADOR" at Controlador_FSM_Control.vhd(55) File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+Info (12128): Elaborating entity "Controlador_decod" for hierarchy "Controlador_Topo:CONTROLADOR|Controlador_decod:FSM_ESTADOS_DECOD" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_Topo.vhd Line: 89
+Info (12128): Elaborating entity "Sequenciadores_Topo" for hierarchy "Sequenciadores_Topo:SEQUENCIADORES" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 160
+Info (12128): Elaborating entity "Sequenciadores_FSM_C1" for hierarchy "Sequenciadores_Topo:SEQUENCIADORES|Sequenciadores_FSM_C1:afsm_c1" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_Topo.vhd Line: 83
+Info (12128): Elaborating entity "Sequenciadores_FSM_C2" for hierarchy "Sequenciadores_Topo:SEQUENCIADORES|Sequenciadores_FSM_C2:afsm_c2" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_Topo.vhd Line: 84
+Info (12128): Elaborating entity "Sequenciadores_FSM_C3" for hierarchy "Sequenciadores_Topo:SEQUENCIADORES|Sequenciadores_FSM_C3:afsm_c3" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_Topo.vhd Line: 85
+Info (12128): Elaborating entity "Sequenciadores_decod" for hierarchy "Sequenciadores_Topo:SEQUENCIADORES|Sequenciadores_decod:adecod_c1" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_Topo.vhd Line: 87
+Info (12128): Elaborating entity "Comparador_Topo" for hierarchy "Comparador_Topo:COMPARADOR" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 162
+Info (12128): Elaborating entity "comparador_ROM" for hierarchy "Comparador_Topo:COMPARADOR|comparador_ROM:ROM" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_Topo.vhd Line: 43
+Info (12128): Elaborating entity "Hab_AND_data" for hierarchy "Comparador_Topo:COMPARADOR|Hab_AND_data:HAB_AND_ROM" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_Topo.vhd Line: 44
+Info (12128): Elaborating entity "ContadorCredito_Topo" for hierarchy "ContadorCredito_Topo:CONTADOR_DE_CREDITO" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 164
+Info (12128): Elaborating entity "ContadorCredito_Somador" for hierarchy "ContadorCredito_Topo:CONTADOR_DE_CREDITO|ContadorCredito_Somador:SOMADOR_SUBTRATOR" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Topo.vhd Line: 77
+Info (12128): Elaborating entity "ContadorCredito_Mux" for hierarchy "ContadorCredito_Topo:CONTADOR_DE_CREDITO|ContadorCredito_Mux:MUX_REGISTRADOR" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Topo.vhd Line: 79
+Info (12128): Elaborating entity "ContadorCredito_Comb" for hierarchy "ContadorCredito_Topo:CONTADOR_DE_CREDITO|ContadorCredito_Comb:COMB_REGISTRADOR" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Topo.vhd Line: 81
+Info (12128): Elaborating entity "ContadorCredito_Registrador" for hierarchy "ContadorCredito_Topo:CONTADOR_DE_CREDITO|ContadorCredito_Registrador:REGISTRADOR" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Topo.vhd Line: 83
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer SeletorNiveis_Topo:SELETOR_DE_NIVEIS|SeletorNiveis_MUX:topo_mux|f File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Mux.vhd Line: 8
+Warning (13012): Latch Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|RESET_CONTADOR has unsafe behavior File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 23
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E1 File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 37
+Warning (13012): Latch Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|CREDITO_23 has unsafe behavior File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E2 File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 37
+Warning (13012): Latch Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|HABILITA_CREDITO has unsafe behavior File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 22
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E6 File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 37
+Warning (13012): Latch Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|INCREMENTA_RODADAS_TEMP[3] has unsafe behavior File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E6 File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 37
+Warning (13012): Latch Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|INCREMENTA_RODADAS_TEMP[2] has unsafe behavior File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E6 File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 37
+Warning (13012): Latch Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|INCREMENTA_RODADAS_TEMP[1] has unsafe behavior File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E6 File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 37
+Warning (13012): Latch Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|INCREMENTA_RODADAS_TEMP[0] has unsafe behavior File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 55
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Controlador_Topo:CONTROLADOR|Controlador_FSM_Control:FSM_CONTROL|EA.E6 File: C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd Line: 37
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 19
+    Warning (13410): Pin "HEX5[1]" is stuck at VCC File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 19
+    Warning (13410): Pin "HEX5[2]" is stuck at VCC File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 19
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 19
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 19
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 19
+    Warning (13410): Pin "HEX5[6]" is stuck at GND File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 19
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 11 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 8
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 8
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 11
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 11
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 11
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 11
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 11
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 11
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 11
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 11
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd Line: 11
+Info (21057): Implemented 344 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 52 output pins
+    Info (21061): Implemented 277 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 46 warnings
+    Info: Peak virtual memory: 871 megabytes
+    Info: Processing ended: Fri Dec 04 07:46:14 2015
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:38
+
+

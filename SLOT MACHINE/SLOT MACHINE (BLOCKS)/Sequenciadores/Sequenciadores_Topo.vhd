@@ -8,7 +8,7 @@ port (
 		C2 : IN std_logic;
 		C3 : IN std_logic;
 		
-		RODADAS: in std_logic;
+	--	RODADAS: in std_logic;
 		KEY0 : IN std_logic;
 		-------- OUTRAS
 		CLOCK: in std_logic;

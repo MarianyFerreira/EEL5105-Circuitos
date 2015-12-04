@@ -12,6 +12,6 @@ entity ContadorCredito_Comb is
 	architecture ARCH of ContadorCredito_Comb is
 		begin
 			
-			saida <= rst or rst_contador;
+			saida <= (rst and not rst_contador);
 			
 		end ARCH;

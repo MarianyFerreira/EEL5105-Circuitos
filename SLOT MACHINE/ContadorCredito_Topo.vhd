@@ -64,27 +64,26 @@ end component;
 
 ------------------------------------------------------------------------------
 	
-	signal saida_somador_mux : std_logic_vector (10 downto 0);
-	signal saida_registrador_somador : std_logic_vector (10 downto 0);
-	signal saida_mux_registrador:  std_logic_vector (10 downto 0);
-	signal saida_comb_registrador: std_logic;
+	signal SOMA_SUBT : std_logic_vector (10 downto 0);
+	signal CREDITO_REGISTRAR:  std_logic_vector (10 downto 0);
+	signal RESET_REGISTRADOR: std_logic;
 	
-	signal MSB_CREDITO_NOVO : std_logic_vector (10 downto 0);
+	signal MSB_CREDITO_ATUAL : std_logic_vector (10 downto 0);
 	
 ------------------------------------------------------------------------------
 
 	begin
 	
-	SOMADOR_SUBTRATOR: ContadorCredito_Somador port map (saida_registrador_somador, CREDITO, saida_somador_mux);
+	SOMADOR_SUBTRATOR: ContadorCredito_Somador port map (MSB_CREDITO_ATUAL, CREDITO, SOMA_SUBT);
 	
-	MUX_REGISTRADOR: ContadorCredito_Mux port map (saida_somador_mux, "00000010111", CREDITO_23, saida_mux_registrador);
+	MUX_REGISTRADOR: ContadorCredito_Mux port map (SOMA_SUBT, "00000010111", CREDITO_23, CREDITO_REGISTRAR);
 	
-	COMB_REGISTRADOR: ContadorCredito_Comb port map (KEY0, RESET_CONTADOR, saida_comb_registrador);
+	COMB_REGISTRADOR: ContadorCredito_Comb port map (KEY0, RESET_CONTADOR, RESET_REGISTRADOR);
 	
-	REGISTRADOR: ContadorCredito_Registrador port map (saida_comb_registrador, CLOCK, saida_mux_registrador, MSB_CREDITO_NOVO);
+	REGISTRADOR: ContadorCredito_Registrador port map (RESET_REGISTRADOR, CLOCK, CREDITO_REGISTRAR, MSB_CREDITO_ATUAL);
 	
-	MSB <= MSB_CREDITO_NOVO(10);
+	MSB <= MSB_CREDITO_ATUAL(10);
 	
-	CREDITO_NOVO <= MSB_CREDITO_NOVO(9 downto 0);
+	CREDITO_NOVO <= MSB_CREDITO_ATUAL(9 downto 0);
 	
 end ARCH;

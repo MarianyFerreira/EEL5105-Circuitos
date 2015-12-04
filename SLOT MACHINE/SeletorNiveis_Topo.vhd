@@ -5,7 +5,7 @@ use ieee.std_logic_1164.all;
 entity SeletorNiveis_Topo is
 
  port(-- Entradas 
-		CLOCK_50: in  std_logic;
+		CLOCKin: in  std_logic;
 		SW9: in std_logic;
 		
 		-- Saidas
@@ -37,7 +37,7 @@ end component;
 	
 begin
 
-	topo_clock: SeletorNiveis_clock port map (CLOCK_50, clock1Hz_mux, clock2Hz_mux);
+	topo_clock: SeletorNiveis_clock port map (CLOCKin, clock1Hz_mux, clock2Hz_mux);
 	topo_mux: SeletorNiveis_MUX port map (clock1Hz_mux, clock2Hz_mux, SW9, CLOCK);
 
 	

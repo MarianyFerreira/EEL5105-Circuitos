@@ -36,6 +36,7 @@ architecture ARCH of Controlador_FSM_Control is
 	type STATES is (E0, E1, E2, E3, E4, E5, E6);
 	signal EA, PE : STATES;
 	SIGNAL INCREMENTA_RODADAS: std_logic_vector (3 downto 0);
+	SIGNAL INCREMENTA_RODADAS_TEMP: std_logic_vector (3 downto 0);
 	
 	
 	begin
@@ -46,6 +47,8 @@ architecture ARCH of Controlador_FSM_Control is
 
 				elsif rising_edge(CLOCK) then
 					EA <= PE;
+					INCREMENTA_RODADAS <= INCREMENTA_RODADAS_TEMP;
+					RODADAS <= INCREMENTA_RODADAS;
 				end if;
 		end process;
 
@@ -55,97 +58,115 @@ architecture ARCH of Controlador_FSM_Control is
 				case EA is
 
 				when E0 =>
-					
-					if (INIT_STOP = '0') then
+						
+						ESTADOS <= "0000";
+				
 						RESET_CONTADOR <= '1';
 						HABILITA_CREDITO <= '0';
 						C1 <= '0';
 						C2 <= '0';
 						C3 <= '0';
+						INCREMENTA_RODADAS_TEMP <= "0000";
+						
+					if (INIT_STOP = '1') then
 					
-						PE <= E1;
+						PE <= E0;
 					
 					else
 					
-						PE <= E0;
+						PE <= E1;
 					
 					end if;
 				
 				when E1 =>
+						ESTADOS <= "0001";
+				
 						RESET_CONTADOR <= '0';
 						CREDITO_23 <= '1';
-						
-						INCREMENTA_RODADAS <= "0000";
 					
 						PE <= E2;
 				
 				when E2 =>		--ESPERA
-				
-					if (INIT_STOP = '0') then
+						ESTADOS <= "0010";
+						
 						CREDITO_23 <= '0';
+						
+						HABILITA_CREDITO <= '0';
+						
 						C1 <= '1';
 						C2 <= '1';
 						C3 <= '1';
-						HABILITA_CREDITO <= '0';
 						
-						PE <= E3;
+				
+					if (INIT_STOP = '1') then
+						
+						PE <= E2;
 					
 					else
 					
-						PE <= E2;
+						PE <= E3;
 					
 					end if;
 					
 				when E3 =>		-- SEQ 1
-					if (INIT_STOP = '0') then
+						ESTADOS <= "0011";
+						
 						C1 <= '0';
 						C2 <= '1';
 						C3 <= '1';
-					
-						PE <= E4;
-					
-					else
+						
+					if (INIT_STOP = '1') then
 					
 						PE <= E3;
 					
-					end if;
-					
-				when E4 =>		-- SEQ 2
-					if (INIT_STOP = '0') then
-						C1 <= '0';
-						C2 <= '0';
-						C3 <= '1';
-						PE <= E5;
-					
 					else
 					
 						PE <= E4;
+					
+					end if;
+					
+				when E4 =>		-- SEQ 2[
+				ESTADOS <= "0100";
+				
+						C1 <= '0';
+						C2 <= '0';
+						C3 <= '1';
+						
+					if (INIT_STOP = '1') then
+						PE <= E4;
+					
+					else
+					
+						PE <= E5;
 					
 					end if;
 					
 				when E5 =>		-- SEQ 3
+				ESTADOS <= "0101";
 				
-				if (INIT_STOP = '0') then
-					
 					C1 <= '0';
 					C2 <= '0';
 					C3 <= '0';
+				
+				if (INIT_STOP = '1') then
 					
-					PE <= E6;
+					PE <= E5;
 					
 					else
 					
-						PE <= E5;
+						PE <= E6;
 					
 					end if;
 					
 				when E6 =>		-- TESTE
-					
-					INCREMENTA_RODADAS <= std_logic_vector(unsigned(INCREMENTA_RODADAS) + 1);
+	
+					ESTADOS <= "0110";
 					
 					HABILITA_CREDITO <= '1';
 					
-					if (INCREMENTA_RODADAS = "1010" or SEM_CREDITO = '1') then
+					INCREMENTA_RODADAS_TEMP <= std_logic_vector(unsigned(INCREMENTA_RODADAS) + 1);					
+					
+					if (INCREMENTA_RODADAS = "1001" or SEM_CREDITO = '1') then
 						
 						PE <= E0;
 						
@@ -158,6 +179,5 @@ architecture ARCH of Controlador_FSM_Control is
 			end case;
 			
  end process;
-						RODADAS <= INCREMENTA_RODADAS;
 						
 end ARCH;

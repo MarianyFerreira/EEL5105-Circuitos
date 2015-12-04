@@ -52,112 +52,112 @@ architecture ARCH of Sequenciadores_FSM_C1 is
 	when s0 => 	-- 0, 5, c, 9, 2, e, 1, d, 7, 3, 4, 6, f, 8, b, a
 		Saida <= print0;
 
-		if K3 = '0' then PE <= s5;
+		if K3 = '1' then PE <= s5;
 			else PE <= s0;
 		end if;
 
 	when s1 => 	-- 0, 5, c, 9, 2, e, 1, d, 7, 3, 4, 6, f, 8, b, a
 		Saida <= print1;
 
-		if K3 = '0' then PE <= sD;
+		if K3 = '1' then PE <= sD;
 			else PE <= s1;
 		end if;
 
 		when s2 => 	-- 0, 5, c, 9, 2, e, 1, d, 7, 3, 4, 6, f, 8, b, a
 			Saida <= print2;
 
-			if K3 = '0' then PE <= sE;
+			if K3 = '1' then PE <= sE;
 				else PE <= s2;
 			end if;
 
 		when s3 => 	-- 0, 5, c, 9, 2, e, 1, d, 7, 3, 4, 6, f, 8, b, a
 			Saida <= print3;
 
-			if K3 = '0' then PE <= s4;
+			if K3 = '1' then PE <= s4;
 				else PE <= s3;
 			end if;
 
 		when s4 => 	-- 0, 5, c, 9, 2, e, 1, d, 7, 3, 4, 6, f, 8, b, a
 			Saida <= print4;
 
-			if K3 = '0' then PE <= s6;
+			if K3 = '1' then PE <= s6;
 				else PE <= s4;
 			end if;
 
 		when s5 => 	-- 0, 5, c, 9, 2, e, 1, d, 7, 3, 4, 6, f, 8, b, a
 			Saida <= print5;
 
-			if K3 = '0' then PE <= sC;
+			if K3 = '1' then PE <= sC;
 				else PE <= s5;
 			end if;
 
 			when s6 => 	-- 0, 5, c, 9, 2, e, 1, d, 7, 3, 4, 6, f, 8, b, a
 				Saida <= print6;
 
-				if K3 = '0' then PE <= sF;
+				if K3 = '1' then PE <= sF;
 					else PE <= s6;
 				end if;
 
 			when s7 => 	-- 0, 5, c, 9, 2, e, 1, d, 7, 3, 4, 6, f, 8, b, a
 				Saida <= print7;
 
-				if K3 = '0' then PE <= s3;
+				if K3 = '1' then PE <= s3;
 					else PE <= s7;
 				end if;
 
 			when s8 => 	-- 0, 5, c, 9, 2, e, 1, d, 7, 3, 4, 6, f, 8, b, a
 				Saida <= print8;
 
-				if K3 = '0' then PE <= sB;
+				if K3 = '1' then PE <= sB;
 					else PE <= s8;
 				end if;
 
 			when s9 => 	-- 0, 5, c, 9, 2, e, 1, d, 7, 3, 4, 6, f, 8, b, a
 				Saida <= print9;
 
-				if K3 = '0' then PE <= s2;
+				if K3 = '1' then PE <= s2;
 					else PE <= s9;
 				end if;
 
 			when sA => 	-- 0, 5, c, 9, 2, e, 1, d, 7, 3, 4, 6, f, 8, b, a
 				Saida <= printA;
 
-				if K3 = '0' then PE <= s0;
+				if K3 = '1' then PE <= s0;
 					else PE <= sA;
 				end if;
 
 			when sB => 	-- 0, 5, c, 9, 2, e, 1, d, 7, 3, 4, 6, f, 8, b, a
 				Saida <= printB;
 
-				if K3 = '0' then PE <= sA;
+				if K3 = '1' then PE <= sA;
 					else PE <= sB;
 				end if;
 
 			when sC => 	-- 0, 5, c, 9, 2, e, 1, d, 7, 3, 4, 6, f, 8, b, a
 				Saida <= printC;
 
-				if K3 = '0' then PE <= s9;
+				if K3 = '1' then PE <= s9;
 					else PE <= sC;
 				end if;
 
 			when sD => 	-- 0, 5, c, 9, 2, e, 1, d, 7, 3, 4, 6, f, 8, b, a
 				Saida <= printD;
 
-				if K3 = '0' then PE <= s7;
+				if K3 = '1' then PE <= s7;
 					else PE <= sD;
 				end if;
 
 			when sE => 	-- 0, 5, c, 9, 2, e, 1, d, 7, 3, 4, 6, f, 8, b, a
 				Saida <= printE;
 
-				if K3 = '0' then PE <= s1;
+				if K3 = '1' then PE <= s1;
 					else PE <= sE;
 				end if;
 
 			when sF => 	-- 0, 5, c, 9, 2, e, 1, d, 7, 3, 4, 6, f, 8, b, a
 				Saida <= printF;
 
-				if K3 = '0' then PE <= s8;
+				if K3 = '1' then PE <= s8;
 					else PE <= sF;
 				end if;
 

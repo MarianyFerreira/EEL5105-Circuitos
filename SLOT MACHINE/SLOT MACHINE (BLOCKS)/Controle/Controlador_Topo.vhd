@@ -18,6 +18,7 @@ entity Controlador_Topo is
 		C3: out std_logic;									-- SAIDA PRO SEQUENCIADOR
 		
 		CREDITO_23: out std_logic;							-- SAIDA PRO CONTADOR DE CREDITO
+		
 		HABILITA_CREDITO: out std_logic;					-- SAIDA PRO COMPARADOR	
 		RESET_CONTADOR: out std_logic;					-- SAIDA PRO CONTADOR DE CREDITO			
 	--	RODADAS:  out std_logic_vector (3 downto 0); -- SAIDA PRO DECOD
@@ -83,7 +84,7 @@ end component;
 	
 begin
 
-	FSM_CONTROL : Controlador_FSM_Control port map (MSB, KEY3,CLOCK, KEY0, C1, C2, C3, CREDITO_23, HABILITA_CREDITO, RESET_CONTADOR, RODADAS_DECOD, ESTADOS_DECOD);
+	FSM_CONTROL : Controlador_FSM_Control port map (MSB, KEY3, CLOCK, KEY0, C1, C2, C3, CREDITO_23, HABILITA_CREDITO, RESET_CONTADOR, RODADAS_DECOD, ESTADOS_DECOD);
 
 	FSM_ESTADOS_DECOD : Controlador_decod port map (ESTADOS_DECOD, HEX4);
 	

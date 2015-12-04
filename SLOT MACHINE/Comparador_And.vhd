@@ -14,6 +14,9 @@ end Hab_AND_data;
 architecture behavior of Hab_AND_data is 
 	
 begin 
-		 saida <= data and (data'length => hab_premio);
+		 saida <= data when hab_premio = '1'
+		 else "00000000000";
+		 
+		 
 		 
 end behavior;

@@ -1,0 +1,814 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Hetfield/Pictures/Slot machine pos lab/simulation/modelsim
+Ecomparador_rom
+Z1 w1449195849
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_ROM.vhd
+Z7 FC:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_ROM.vhd
+l0
+L5
+V84MPXb_8<1XClEmFj@o^T3
+!s100 Z;96>FN1:HzD^S<l3X]i?1
+Z8 OV;C;10.4b;61
+31
+Z9 !s110 1449209556
+!i10b 1
+Z10 !s108 1449209556.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_ROM.vhd|
+Z12 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_ROM.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1
+Aarch
+R2
+R3
+R4
+R5
+DEx4 work 14 comparador_rom 0 22 84MPXb_8<1XClEmFj@o^T3
+l39
+L15
+V6ejfP@?I26j5WmHH3ke@h3
+!s100 WEVJCTaiZ]78i8nGzFhi:1
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ecomparador_topo
+R1
+R4
+R5
+R0
+Z15 8C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_Topo.vhd
+Z16 FC:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_Topo.vhd
+l0
+L4
+VzahNWzK=VzX2dHgAW=K=?1
+!s100 zPWYP5[FI7C@23MI76IJ53
+R8
+31
+R9
+!i10b 1
+R10
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_Topo.vhd|
+Z18 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_Topo.vhd|
+!i113 1
+R13
+R14
+Aarch
+R4
+R5
+DEx4 work 15 comparador_topo 0 22 zahNWzK=VzX2dHgAW=K=?1
+l41
+L18
+Vk?zbn>7X9=7VdQBRc4h<D0
+!s100 Y3[Y6kC2ecV]a:7_EO<Ci1
+R8
+31
+R9
+!i10b 1
+R10
+R17
+R18
+!i113 1
+R13
+R14
+Econtadorcredito_comb
+R1
+R4
+R5
+R0
+Z19 8C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Comb.vhd
+Z20 FC:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Comb.vhd
+l0
+L4
+V;?gFKLhW9i_2l>U>]z:4l1
+!s100 A6d2=U[EiF>e;oOibW7:G3
+R8
+31
+R9
+!i10b 1
+R10
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Comb.vhd|
+Z22 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Comb.vhd|
+!i113 1
+R13
+R14
+Aarch
+R4
+R5
+DEx4 work 20 contadorcredito_comb 0 22 ;?gFKLhW9i_2l>U>]z:4l1
+l13
+L12
+VL[oahnWSdHJSQNh58m89=0
+!s100 ;=87K[gQcdY@S2d00N<j83
+R8
+31
+R9
+!i10b 1
+R10
+R21
+R22
+!i113 1
+R13
+R14
+Econtadorcredito_mux
+R1
+R4
+R5
+R0
+Z23 8C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Mux.vhd
+Z24 FC:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Mux.vhd
+l0
+L5
+VO0VLR3TMe^a2j4MfCgTeQ1
+!s100 EEgdD7Sd=U>H?^O84[HR>0
+R8
+31
+R9
+!i10b 1
+R10
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Mux.vhd|
+Z26 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Mux.vhd|
+!i113 1
+R13
+R14
+Aarch
+R4
+R5
+DEx4 work 19 contadorcredito_mux 0 22 O0VLR3TMe^a2j4MfCgTeQ1
+l17
+L15
+VCmPMeNNNLY`eUDJ0lZ;nP2
+!s100 F[nGleMGz^D5SQ;Vdg9I23
+R8
+31
+R9
+!i10b 1
+R10
+R25
+R26
+!i113 1
+R13
+R14
+Econtadorcredito_registrador
+R1
+R4
+R5
+R0
+Z27 8C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Registrador.vhd
+Z28 FC:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Registrador.vhd
+l0
+L4
+VPiYKG2h:29m51WKmAn4E91
+!s100 RN=]SFocI06bE>U<79c3;3
+R8
+31
+R9
+!i10b 1
+R10
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Registrador.vhd|
+Z30 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Registrador.vhd|
+!i113 1
+R13
+R14
+Aarch
+R4
+R5
+DEx4 work 27 contadorcredito_registrador 0 22 PiYKG2h:29m51WKmAn4E91
+l16
+L15
+V5dc1cW5Dhc0INAa3X<SGH3
+!s100 Ol=PmMBR[^cGhAaL:6=Wi1
+R8
+31
+R9
+!i10b 1
+R10
+R29
+R30
+!i113 1
+R13
+R14
+Econtadorcredito_somador
+R1
+R2
+Z31 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+R4
+R5
+R0
+Z32 8C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Somador.vhd
+Z33 FC:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Somador.vhd
+l0
+L5
+VGCBE;ckZ@OQ8>fiWVe?MB3
+!s100 7gNQgTE7GU;1[`b>207;G0
+R8
+31
+R9
+!i10b 1
+R10
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Somador.vhd|
+Z35 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Somador.vhd|
+!i113 1
+R13
+R14
+Aarch
+R2
+R31
+R4
+R5
+DEx4 work 23 contadorcredito_somador 0 22 GCBE;ckZ@OQ8>fiWVe?MB3
+l16
+L15
+Vo?6O6cgClfeP?Xlz>4B<U0
+!s100 @eYUSBV<macWkJNQ=PVSQ1
+R8
+31
+R9
+!i10b 1
+R10
+R34
+R35
+!i113 1
+R13
+R14
+Econtadorcredito_topo
+R1
+R4
+R5
+R0
+Z36 8C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Topo.vhd
+Z37 FC:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Topo.vhd
+l0
+L4
+V<b7J2i74D:B;WIQkZQLTe2
+!s100 ob:IT_LID@L7VQzeA[lfm2
+R8
+31
+R9
+!i10b 1
+R10
+Z38 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Topo.vhd|
+Z39 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/ContadorCredito_Topo.vhd|
+!i113 1
+R13
+R14
+Aarch
+R4
+R5
+DEx4 work 20 contadorcredito_topo 0 22 <b7J2i74D:B;WIQkZQLTe2
+l75
+L22
+V9cHFnMc[]h]dz^gjT8Fz72
+!s100 ?jCJ=Uk_]fV_8_hPm:FHJ0
+R8
+31
+R9
+!i10b 1
+R10
+R38
+R39
+!i113 1
+R13
+R14
+Econtrolador_decod
+R1
+R4
+R5
+R0
+Z40 8C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_decod.vhd
+Z41 FC:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_decod.vhd
+l0
+L4
+VZSDm<=:9U6Vhh_=H8fD8o2
+!s100 @Dk2SDg5^X[@H1<ARI3C60
+R8
+31
+R9
+!i10b 1
+R10
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_decod.vhd|
+Z43 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_decod.vhd|
+!i113 1
+R13
+R14
+Aarch
+R4
+R5
+DEx4 work 17 controlador_decod 0 22 ZSDm<=:9U6Vhh_=H8fD8o2
+l11
+L10
+VhAdEJ2DP4;3RP3lmWAELG3
+!s100 JzZ;m:O:_FAMn]o:Z7>7`0
+R8
+31
+R9
+!i10b 1
+R10
+R42
+R43
+!i113 1
+R13
+R14
+Econtrolador_fsm_control
+Z44 w1449203179
+Z45 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R4
+R5
+R0
+Z46 8C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd
+Z47 FC:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd
+l0
+L5
+V=6<jzk6[_0P0`=LHY]doE0
+!s100 8SbD0UL^4nk7G[d5IWWYM0
+R8
+31
+R9
+!i10b 1
+R10
+Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd|
+Z49 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_FSM_Control.vhd|
+!i113 1
+R13
+R14
+Aarch
+R45
+R4
+R5
+DEx4 work 23 controlador_fsm_control 0 22 =6<jzk6[_0P0`=LHY]doE0
+l42
+L34
+V?=YU8HW9jo6KeK[lbL@kC3
+!s100 ZzZULdk]@4dAR]Q9[O?KK0
+R8
+31
+R9
+!i10b 1
+R10
+R48
+R49
+!i113 1
+R13
+R14
+Econtrolador_topo
+R1
+R4
+R5
+R0
+Z50 8C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_Topo.vhd
+Z51 FC:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_Topo.vhd
+l0
+L5
+V9o1@>g_3DVYIzh=Wn@E372
+!s100 h2kNNY;bA[`AbHR[7=EjI2
+R8
+31
+R9
+!i10b 1
+Z52 !s108 1449209555.000000
+Z53 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_Topo.vhd|
+Z54 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/Controlador_Topo.vhd|
+!i113 1
+R13
+R14
+Aarch
+R4
+R5
+DEx4 work 16 controlador_topo 0 22 9o1@>g_3DVYIzh=Wn@E372
+l85
+L37
+V`Xa:[@jTCQ5z]MhJa7a860
+!s100 dEQT?Q>m:igz`_a_=738Z0
+R8
+31
+R9
+!i10b 1
+R52
+R53
+R54
+!i113 1
+R13
+R14
+Ehab_and_data
+R1
+R4
+R5
+R0
+Z55 8C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_And.vhd
+Z56 FC:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_And.vhd
+l0
+L5
+V6>HGXaco=FF>a4fI@Kzci2
+!s100 VfJzbZZGJQa=mg1hK8A;21
+R8
+31
+R9
+!i10b 1
+R10
+Z57 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_And.vhd|
+Z58 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/Comparador_And.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R4
+R5
+DEx4 work 12 hab_and_data 0 22 6>HGXaco=FF>a4fI@Kzci2
+l16
+L14
+VBJSZ1NaXeCQX3SC;D?QWF1
+!s100 o87BGO]NnVCcG?Qo^mZ7T3
+R8
+31
+R9
+!i10b 1
+R10
+R57
+R58
+!i113 1
+R13
+R14
+Eseletorniveis_clock
+Z59 w1449207585
+R45
+R4
+R5
+R0
+Z60 8C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Clock.vhd
+Z61 FC:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Clock.vhd
+l0
+L5
+Vz8HG4OnHYR2?0@0>mM0C]3
+!s100 f9=Ll?2ZB6cBQkQRQ^K:j1
+R8
+31
+Z62 !s110 1449209555
+!i10b 1
+R52
+Z63 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Clock.vhd|
+Z64 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Clock.vhd|
+!i113 1
+R13
+R14
+Aarch
+R45
+R4
+R5
+DEx4 work 19 seletorniveis_clock 0 22 z8HG4OnHYR2?0@0>mM0C]3
+l20
+L15
+V[zHd^AMZe[:JL59afz4Y>0
+!s100 2Od?hz^`=>KkeEUj0o<6V2
+R8
+31
+R62
+!i10b 1
+R52
+R63
+R64
+!i113 1
+R13
+R14
+Eseletorniveis_mux
+R1
+R4
+R5
+R0
+Z65 8C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Mux.vhd
+Z66 FC:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Mux.vhd
+l0
+L5
+VE2Z>7FdXEB<1;9oKYZ@EM3
+!s100 UET;^=Hm9bV?K<HF7o>Y21
+R8
+31
+R62
+!i10b 1
+R52
+Z67 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Mux.vhd|
+Z68 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Mux.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R4
+R5
+DEx4 work 17 seletorniveis_mux 0 22 E2Z>7FdXEB<1;9oKYZ@EM3
+l14
+L12
+VfDBS?z`fY?dehn6a5=DlC3
+!s100 n>[CCQE[=HWR=JmFf[7@Y1
+R8
+31
+R62
+!i10b 1
+R52
+R67
+R68
+!i113 1
+R13
+R14
+Eseletorniveis_topo
+R1
+R4
+R5
+R0
+Z69 8C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Topo.vhd
+Z70 FC:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Topo.vhd
+l0
+L5
+V0A6_0GXo9M;lQ4;KbWJL;1
+!s100 j0mGoWf[acbR7Bk@?k3Z70
+R8
+31
+R62
+!i10b 1
+R52
+Z71 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Topo.vhd|
+Z72 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/SeletorNiveis_Topo.vhd|
+!i113 1
+R13
+R14
+Aarch
+R4
+R5
+DEx4 work 18 seletorniveis_topo 0 22 0A6_0GXo9M;lQ4;KbWJL;1
+l38
+L17
+V62Uc<g`9Ll9B@CU5K6Q:71
+!s100 6L`m0UlHG@266RcZm:P2Z2
+R8
+31
+R62
+!i10b 1
+R52
+R71
+R72
+!i113 1
+R13
+R14
+Esequenciadores_decod
+Z73 w1449195850
+R4
+R5
+R0
+Z74 8C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_decod.vhd
+Z75 FC:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_decod.vhd
+l0
+L4
+VIgF;gC?nigV^6of^W9SYg0
+!s100 cKfkB35K0gbbQd?zeA>c<1
+R8
+31
+R62
+!i10b 1
+R52
+Z76 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_decod.vhd|
+Z77 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_decod.vhd|
+!i113 1
+R13
+R14
+Aarch
+R4
+R5
+DEx4 work 20 sequenciadores_decod 0 22 IgF;gC?nigV^6of^W9SYg0
+l11
+L10
+V9jSR_KYVA1T?=a<_KX5KO2
+!s100 T@_<O@L`YY]9T]QYgTRnI1
+R8
+31
+R62
+!i10b 1
+R52
+R76
+R77
+!i113 1
+R13
+R14
+Esequenciadores_fsm_c1
+R73
+R2
+R3
+R4
+R5
+R0
+Z78 8C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C1.vhd
+Z79 FC:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C1.vhd
+l0
+L5
+VT58[Ih@14Tl]11Y6mcmD^1
+!s100 9Y@d;ck2=NYF5Q4:mGRET1
+R8
+31
+R62
+!i10b 1
+R52
+Z80 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C1.vhd|
+Z81 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C1.vhd|
+!i113 1
+R13
+R14
+Aarch
+R2
+R3
+R4
+R5
+DEx4 work 21 sequenciadores_fsm_c1 0 22 T58[Ih@14Tl]11Y6mcmD^1
+l34
+L13
+VZM_n]fWM^W<3GSO0m1Wo@1
+!s100 1N>4:_zTHRJ83?BQlNaP=3
+R8
+31
+R62
+!i10b 1
+R52
+R80
+R81
+!i113 1
+R13
+R14
+Esequenciadores_fsm_c2
+R73
+R2
+R3
+R4
+R5
+R0
+Z82 8C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C2.vhd
+Z83 FC:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C2.vhd
+l0
+L5
+Vf>f_7geY2>V0lgh[>h^5H2
+!s100 jYag4KGLHBTZYaYHleK^<2
+R8
+31
+R62
+!i10b 1
+R52
+Z84 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C2.vhd|
+Z85 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C2.vhd|
+!i113 1
+R13
+R14
+Aarch
+R2
+R3
+R4
+R5
+DEx4 work 21 sequenciadores_fsm_c2 0 22 f>f_7geY2>V0lgh[>h^5H2
+l34
+L13
+VHzX>`j:RBSILP8k`f4F290
+!s100 1CUA@:QR:FaWT8Ch?S5g40
+R8
+31
+R62
+!i10b 1
+R52
+R84
+R85
+!i113 1
+R13
+R14
+Esequenciadores_fsm_c3
+R73
+R2
+R3
+R4
+R5
+R0
+Z86 8C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C3.vhd
+Z87 FC:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C3.vhd
+l0
+L5
+V0;`TH;k0H>aJZEG<F9JFY1
+!s100 bgj3N>NE4`b8Q=c;46h7Z1
+R8
+31
+R62
+!i10b 1
+R52
+Z88 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C3.vhd|
+Z89 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_FSM_C3.vhd|
+!i113 1
+R13
+R14
+Aarch
+R2
+R3
+R4
+R5
+DEx4 work 21 sequenciadores_fsm_c3 0 22 0;`TH;k0H>aJZEG<F9JFY1
+l34
+L13
+V72JI1i5jfeENz<3QUA3UO1
+!s100 J]fPFJjKdl9AR=B@2NDHe1
+R8
+31
+R62
+!i10b 1
+R52
+R88
+R89
+!i113 1
+R13
+R14
+Esequenciadores_topo
+R73
+R4
+R5
+R0
+Z90 8C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_Topo.vhd
+Z91 FC:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_Topo.vhd
+l0
+L4
+VNPGJ2Oz`imdg?e5A7jh0d0
+!s100 U`@;_gQ_F653I<l]0E:852
+R8
+31
+R62
+!i10b 1
+R52
+Z92 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_Topo.vhd|
+Z93 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/Sequenciadores_Topo.vhd|
+!i113 1
+R13
+R14
+Aarch
+R4
+R5
+DEx4 work 19 sequenciadores_topo 0 22 NPGJ2Oz`imdg?e5A7jh0d0
+l81
+L40
+V=CP_@YoQeQFTlQ@CT^7KM0
+!s100 0Vl^_;5O40lfnbU9[18hW1
+R8
+31
+R62
+!i10b 1
+R52
+R92
+R93
+!i113 1
+R13
+R14
+Eslotmachine
+R73
+R4
+R5
+R0
+Z94 8C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd
+Z95 FC:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd
+l0
+L4
+VMcUez>[zh;KhjQBDEO=WW1
+!s100 aHG5BC>EnJiO_]89kMAGd2
+R8
+31
+R62
+!i10b 1
+Z96 !s108 1449209554.000000
+Z97 !s90 -reportprogress|300|-93|-work|work|C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd|
+Z98 !s107 C:/Users/Hetfield/Pictures/Slot machine pos lab/SLOTMACHINE.vhd|
+!i113 1
+R13
+R14
+Aarch
+R4
+R5
+DEx4 work 11 slotmachine 0 22 McUez>[zh;KhjQBDEO=WW1
+l154
+L31
+V0]X0Sf`Y9;h488cZ;NOlA1
+!s100 SHQhLLB0c9oPW;@hKz<?W2
+R8
+31
+R62
+!i10b 1
+R96
+R97
+R98
+!i113 1
+R13
+R14

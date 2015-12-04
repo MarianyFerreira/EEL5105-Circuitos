@@ -5,6 +5,7 @@ entity ContadorCredito_Registrador is
 
 	port(	reset: in std_logic;
 			clock: in std_logic;
+			
 			credito: in std_logic_vector (10 downto 0);
 			
 		   saida: out std_logic_vector (10 downto 0)
@@ -23,7 +24,7 @@ architecture ARCH of ContadorCredito_Registrador is
 					
 					elsif rising_edge(clock) then
 					
-						saida <= credito;
+					saida <= credito;
 			
 				end if;
 		end process;

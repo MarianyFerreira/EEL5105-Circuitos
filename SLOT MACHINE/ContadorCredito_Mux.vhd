@@ -14,9 +14,8 @@ END ContadorCredito_Mux  ;
 
 ARCHITECTURE ARCH OF ContadorCredito_Mux  IS
 
-	BEGIN
-		WITH s SELECT
-			saida <= credito WHEN '0',
-			credito23 WHEN OTHERS ;
+BEGIN
+			saida <= credito WHEN s = '0'
+				ELSE credito23;
 
 END ARCH ;

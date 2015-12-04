@@ -62,7 +62,7 @@ BEGIN
        when "1011101111001" => data <= my_rom(15);
        when "0011101110011" => data <= my_rom(14);
        when "1011101110011" => data <= my_rom(15);
-       when others => data <= (others => '0');
+       when others => data <= my_rom(2); -- TESTE DE PONTUACOES
 		
      end case;
 
