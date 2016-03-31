@@ -1,22 +1,24 @@
 Trabalho final do curso EEL5105 de Circuitos e Técnicas Digitais
 
-Apresentado aos professores:
-- Djones Lettnin
-- Eduardo Luiz Ortiz Batista
+- Apresentado aos professores:
+
+Djones Lettnin
+Eduardo Luiz Ortiz Batista
 
 
-Notas Finais da Apresentação:
-- 9.5 (Prático)
-- 9.5 (Teórico e Simulação)
+- Notas Finais da Apresentação:
 
-Observações:
+9.5 (Prático)
+9.5 (Teórico e Simulação)
+
+- Observações:
 
 Parte Prática desenvolvida interamente por Mariany Ferreira e parte teórica e de Simulação desenvolvida parcialmente por Marcos Felipe de Liz Rodrigues.
 
 
-Estrutura de pastas:
+- Estrutura de pastas:
 
-- SLOT MACHINE - Raiz
+    SLOT MACHINE - Raiz
 Arquivos vhd (Todos os aquivos para funcionamento da Slot Machine inclusos)
 
 Arquivos vhd.bak (Backup gerado pelo Quartus)
@@ -26,7 +28,7 @@ Pasta "output_files" (gerada pelo Quartus)
 Pasta "simulation/modelsim" (gerada pelo Quartus)
 
 
-- SLOT MACHINE (BLOCKS)
+    SLOT MACHINE (BLOCKS)
 
 Pasta Comparador
   Arquivos referentes apenas ao bloco Comparador
