@@ -18,7 +18,8 @@ Parte Prática desenvolvida interamente por Mariany Ferreira e parte teórica e 
 
 - Estrutura de pastas:
 
-    SLOT MACHINE - Raiz
+    SLOT MACHINE
+    
 Arquivos vhd (Todos os aquivos para funcionamento da Slot Machine inclusos)
 
 Arquivos vhd.bak (Backup gerado pelo Quartus)
